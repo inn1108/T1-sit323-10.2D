@@ -13,5 +13,5 @@ RUN npm install
 # Bundle app source
 COPY server.js .
 
-EXPOSE 8080  //inntest
+EXPOSE 8080  //inn
 CMD [ "node", "server.js" ]
