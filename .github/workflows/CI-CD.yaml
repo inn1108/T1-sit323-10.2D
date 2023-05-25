@@ -31,5 +31,5 @@ jobs:
 
       - name: Update Kubernetes Deployment
         run: |
-          gcloud container clusters get-credentials my-cluster --zone us-central1-c --project ${{ secrets.GCP_PROJECT_ID }}
+          gcloud container clusters get-credentials jinwei-inn --zone us-central1-c --project ${{ secrets.GCP_PROJECT_ID }}
           kubectl set image deployment/my-app my-app=gcr.io/${{ secrets.GCP_PROJECT_ID }}/my-app:${{ github.sha }}
