@@ -28,8 +28,5 @@ jobs:
         run: kubectl apply -f createDeployment
         # Add steps to deploy to Kubernetes cluster
 
-      - name: Configure test environment
-        run: npm run setup-test-environment
-
       - name: Run tests
         run: npm test
