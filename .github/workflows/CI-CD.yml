@@ -23,5 +23,5 @@ jobs:
         # Add steps to deploy to Kubernetes cluster
 
       - name: Run tests
-        run: npm test
+        run: npm test 
 
