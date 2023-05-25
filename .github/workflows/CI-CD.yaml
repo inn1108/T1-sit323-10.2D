@@ -19,6 +19,8 @@ jobs:
           service_account_key: ${{ secrets.GCP_PROJECT_KEY }}
 
       - name: Configure Google Cloud SDK
+        env:
+          CLOUDSDK_PYTHON: /usr/bin/python3
         run: gcloud --quiet config set project ${{ secrets.GCP_PROJECT_ID }}
 
       - name: Authenticate with GCP Container Registry
